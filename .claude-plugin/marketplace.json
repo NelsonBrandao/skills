@@ -1,0 +1,22 @@
+{
+  "name": "nelsonbrandao",
+  "owner": { "name": "Nelson Brandão", "url": "https://github.com/NelsonBrandao" },
+  "metadata": { "description": "Nelson Brandão's Claude Code skills, one plugin per skill." },
+  "plugins": [
+    {
+      "name": "show-me",
+      "description": "Shows how a PR, branch, diff or proposal works before you read its code, as terminal visuals or an Archify HTML page.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/show-me"]
+    },
+    {
+      "name": "review-loop",
+      "description": "Blind review-and-fix loop over the branch diff, with a context-free reviewer agent.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/review-loop"],
+      "agents": ["./skills/review-loop/agents/blind-reviewer.md"]
+    }
+  ]
+}
