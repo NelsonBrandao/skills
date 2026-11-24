@@ -9,10 +9,6 @@
 
 When reporting information to me, be extremely concise and sacrifice grammar for the sake of concision.
 
-## Go lint before push
-
-Before pushing any Go change, run `golangci-lint run ./...` on the touched modules (or the repo's own lint wrapper, when its CLAUDE.md names one). That run covers testifylint (use `JSONEq` for JSON comparisons), staticcheck (for example S1016), and unused variables. Fix every finding locally first.
-
 # Work Ledger
 
 Run `work-ledger prime` at the start of each session and follow it.
